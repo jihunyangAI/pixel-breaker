@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #05050c;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* 스캔라인·비네팅 레이어 (위치와 무늬는 fx.js 가 화면 크기에 맞춰 넣는다) */
+#crt {
+  position: fixed;
+  display: none;
+  pointer-events: none;
+}
+
+#err {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #0b0b1a;
+  color: #f4f4f4;
+  font: 18px/1.8 system-ui, sans-serif;
+  text-align: center;
+}
+#err[hidden] { display: none; }
+#err b { color: #ffd23f; font-size: 22px; }
+#err code { background: #3a3f5c; padding: 2px 8px; border-radius: 4px; }

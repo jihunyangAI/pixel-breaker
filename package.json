@@ -1,0 +1,10 @@
+{
+  "name": "pixel-breaker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Retro-styled, high-resolution brick breaker",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
